@@ -9,7 +9,7 @@ p * {
   display: block;
 }
 
-input[type="email"] {
+input {
   appearance: none;
 
   width: 100%;

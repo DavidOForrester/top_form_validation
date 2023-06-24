@@ -12,8 +12,48 @@
     <form novalidate>
       <p>
         <label for="mail">
-          <span>Please enter an email address:</span>
-          <input type="email" id="mail" name="mail" />
+          <span>Email:</span>
+          <input type="email" id="mail" name="mail" required />
+          <span class="error" aria-live="polite"></span>
+        </label>
+      </p>
+      <p>
+        <label for="country">
+          <span>Country:</span>
+          <input type="text" id="country" name="country" required />
+          <span class="error" aria-live="polite"></span>
+        </label>
+      </p>
+      <p>
+        <label for="zip-code">
+          <span>Zip Code:</span>
+          <input
+            type="text"
+            id="zip-code"
+            name="zip-code"
+            minlength="4"
+            maxlength="4"
+            required
+          />
+          <span class="error" aria-live="polite"></span>
+        </label>
+      </p>
+      <p>
+        <label for="password">
+          <span>Password:</span>
+          <input type="password" id="password" name="password" required />
+          <span class="error" aria-live="polite"></span>
+        </label>
+      </p>
+      <p>
+        <label for="password-confirmation">
+          <span>Password Confirmation:</span>
+          <input
+            type="password"
+            id="password-confirmation"
+            name="password-confirmation"
+            required
+          />
           <span class="error" aria-live="polite"></span>
         </label>
       </p>
